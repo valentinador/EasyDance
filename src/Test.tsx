@@ -1,11 +1,17 @@
-import { Text } from 'react-native';
+import { Text, View, StyleSheet } from "react-native";
 
-
-const Test = ()=>{
-return (
-    <Text>ciao </Text>
-)
-
+export function Test() {
+  return (
+    <View style={styles.container}>
+      <Text>ciao</Text>
+    </View>
+  );
 }
 
-export default Test
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingVertical: 20,
+    backgroundColor: "#cccccc",
+  },
+});
